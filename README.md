@@ -5,17 +5,27 @@ Position based bilingual embedding trained using only sentence aligned parallel 
 This method makes two passes, one over each language’s corpus. In the pass it substitutes one word based on the position from the other language and outputs a mostly monolingual sentence. This method increases the dataset size significantly as new sentences are added for each individual token in both languages. Not all translations are the same length so to accommodate this, the language with a shorter length gets the remainder of the other language appended to it and the language with a longer length randomly selects from words within the same distance from the end of the sentence.
 ### English to Spanish
 He doesn’t like soda
+
 No doesn’t like soda
+
 He le like soda
+
 He doesn’t gustan soda
+
 He doesn’t like los refrescos
+
 
 ### Spanish to English
 No le gustan los refrescos
+
 He le gustan los refrescos
+
 No doesn’t gustan los refrescos
+
 No le like los refrescos
+
 No le gustan soda refrescos
+
 No le gustan los soda
 
 
