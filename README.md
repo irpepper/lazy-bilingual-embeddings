@@ -1,4 +1,4 @@
-# lazy-bilingual-embeddings
+# Lazy Bilingual Embeddings
 Position based bilingual embedding trained using only sentence aligned parallel corpora
 
 ## Method 1 Single Substitution
