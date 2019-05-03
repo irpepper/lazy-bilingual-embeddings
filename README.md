@@ -1,6 +1,12 @@
 # Lazy Bilingual Embeddings
 Position based bilingual embedding trained using only sentence aligned parallel corpora
 
+Inputs:
+Two parallel corpora that are sentence aligned
+
+Output:
+Embedding vector files for each language
+
 ## Method 1 Single Substitution
 This method makes two passes, one over each language’s corpus. In the pass it substitutes one word based on the position from the other language and outputs a mostly monolingual sentence. This method increases the dataset size significantly as new sentences are added for each individual token in both languages. Not all translations are the same length so to accommodate this, the language with a shorter length gets the remainder of the other language appended to it and the language with a longer length randomly selects from words within the same distance from the end of the sentence.
 ### English to Spanish
