@@ -39,3 +39,19 @@ No le like soda refrescos
 This reduces the bias towards words of the same language and creates a smaller training corpus.
 
 
+# How to run
+python create_embeddings.py --lang1 [PATH to Language 1 Corpus,default=data/Books.en-es.en]
+
+				  --lang2 [PATH to Language 2 Corpus,default=data/Books.en-es.es]
+          
+				  --l1 [Language code, default=en]
+          
+				  --l2 [Language code, default=es]
+          
+				  --method [1 or 2, default=1]
+          
+				  --dims [# of dims, default=300]
+          
+				  --epochs [# of training epochs, default=5]
+          
+				  --window [# of tokens left and right for context, default=3]
